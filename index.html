@@ -1,23 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lyric Search</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/css/style.css/">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
-    <div class="containter-fluid">
-        <div class="row">
-            <div class="col-12">
-                
+
+    <div class="row bg-warning">
+        <div class="col-4 vh-100">
+            <h1>Song Lyric Search Engine</h1>
+            <form id="search-form">
+                <input id="search-val" type="text" class="form-input w-75 m-5" placeholder="Search for lyric, song, or artist here">
+                <div class="row mx-5">
+                    <button id="search-btn" class="btn btn-block bg-dark text-light w-50">Search</button>
+                </div>
+
+            </form>
+        </div>
+
+
+        <div id="search-results" class="col bg-dark">
+            <div class="custom-card d-flex text-light">
+                <img class="cover-art" src="https://placehold.co/200x200" alt="">
+                <div class="info">
+                    <h2 class="title my-3">Song title</h2>
+                    <h3 class="artist mb-3">Artist</h3>
+                    <p class="album">Album</p>
+                    <p class="date">Release Date</p>
+                    <p class="lyrics fst-italic">"Lyrics..."</p>
+                </div>
             </div>
         </div>
+
+
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="./assets/js/script.js"></script>
 </body>
+
 </html>
