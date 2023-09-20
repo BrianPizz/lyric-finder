@@ -64,10 +64,13 @@ function printResults(hits){
 
     var dateEl = $('<p>').text(hits.result).text(hits.result.release_date_with_abbreviated_month_for_display);
     infoSection.append(dateEl);
+ 
+    console.log(hits.result.id);
 
-
+    resultCard.attr('data-id', hits.result.id)
 
     resultCard.append(infoSection);
 
     resultsEl.append(resultCard);
+    
 }
